@@ -1,37 +1,73 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,nofollow,noarchive">
-  <meta name="referrer" content="no-referrer">
-  <meta name="theme-color" content="#2154f5">
-  <title>Рабочий проект — Сити-Центр</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232154f5'/%3E%3Cpath d='M23 9a10 10 0 1 0 0 14' fill='none' stroke='%23d4f64a' stroke-width='5'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="login.css">
-  <script src="unlock.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#152627">
+  <meta name="description" content="Сити-Центр: сравнение городов, бюджетов и вариантов открытия пяти офисов в 2027 году.">
+  <title>5 офисов · Сити-Центр</title>
+  <link rel="icon" href="assets/company-logo.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/project-data.js"></script>
+  <script defer src="assets/site.js"></script>
 </head>
 <body>
-  <main class="login-screen" id="login-screen">
-    <div class="login-shell">
-      <a class="brand" href="./" aria-label="Сити-Центр"><span class="brand-mark">СЦ</span><span>Сити-Центр<small>Рабочее пространство</small></span></a>
-      <section class="login-card" aria-labelledby="login-heading">
-        <span class="eyebrow"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4.5" y="8.5" width="11" height="8" rx="2"/><path d="M7 8.5V6a3 3 0 0 1 6 0v2.5"/></svg> ДОСТУП ДЛЯ КОМАНДЫ</span>
-        <h1 id="login-heading">Большие планы.<br><span>В своём кругу.</span></h1>
-        <p class="intro">Рабочий проект открытия пяти офисов. Введите пароль, чтобы посмотреть план, команду и экономику запуска.</p>
-        <form id="unlock-form">
-          <label for="password">Пароль проекта</label>
-          <div class="password-field"><input id="password" name="password" type="password" autocomplete="current-password" required aria-describedby="login-message" autocapitalize="none" spellcheck="false"><button class="show-password" id="show-password" type="button" aria-label="Показать пароль" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
-          <button class="submit-button" id="submit-button" type="submit">Открыть проект <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3 13 10-10M4 3h9v9"/></svg></button>
-          <p class="login-message" id="login-message" role="status" aria-live="polite"></p>
-        </form>
-        <p class="privacy-note"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 2 6 2.5v5c0 4.5-6 8-6 8s-6-3.5-6-8v-5L10 2Z"/><path d="m7.5 9.5 1.8 1.8 3.2-3.2"/></svg>Содержимое зашифровано и открывается по паролю.</p>
-      </section>
-      <footer>Сити-Центр · Развитие сети</footer>
-    </div>
-    <div class="login-art" aria-hidden="true"><div class="art-kicker">ОТ ИДЕИ К НОВОЙ ГЕОГРАФИИ</div><div class="art-lines"><i></i><i></i><i></i><i></i><i></i><div class="art-center">СЦ</div><span class="art-node art-node-1"></span><span class="art-node art-node-2"></span><span class="art-node art-node-3"></span><span class="art-node art-node-4"></span><span class="art-node art-node-5"></span></div><h2>Пять новых офисов.<br>Одна система роста.</h2><p>Города. Люди. Экономика. Решения.</p><span class="art-foot">РАБОЧИЙ ПРОЕКТ КОМПАНИИ</span></div>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="brandbar"><div class="brand"><img src="assets/company-logo.png" alt="Сити-Центр"><span class="brand-divider"></span><span>Развитие сети</span></div><div class="header-actions"><span class="live-dot"></span><span>Обновлено 07.10.2026</span><a class="source-link" data-source target="_blank" rel="noopener">Исходная таблица <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg></a></div></header>
+<div class="shell">
+  <div class="project-heading"><div><div class="eyebrow">СИТИ-ЦЕНТР / ПРОЕКТ 2027</div><h1>Пять офисов. Всё для решения.</h1><p>Сравнивайте рынки, расходы и темп открытия сети.</p></div><div class="project-badge"><span>Горизонт модели</span><b>2027—2029</b><small>Рабочие гипотезы</small></div></div>
+  <nav class="view-nav" aria-label="Разделы проекта"><a href="#cities" data-view="cities" aria-current="page"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 17h14M5 17V7h5v10M10 17V3h5v14M7 10h1m-1 3h1m4-7h1m-1 3h1m-1 3h1"/></svg>Города</a><a href="#launch" data-view="launch"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14v12H3zM3 9h14M6 3v4m8-4v4M6 12h2m3 0h2"/></svg>Варианты запуска</a><a href="#finance" data-view="finance"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 3v14h14M6 13l4-5 3 2 4-6"/></svg>Финансы</a><a href="#team" data-view="team"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm8-1a2 2 0 1 0 0-4M2 17v-2a5 5 0 0 1 10 0v2m2-5a4 4 0 0 1 4 4v1"/></svg>Найм и обучение</a><a href="#data" data-view="data"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 4h14v13H3zM3 8h14M3 12h14M8 4v13"/></svg>Данные</a></nav>
+  <main id="main">
+    <section id="cities" class="view" aria-labelledby="cities-title">
+      <div class="section-top"><div><h2 id="cities-title">Какой город выбрать</h2><p>Пять городов в работе. Казань и Краснодар — альтернативы.</p></div><span class="status-pill">Пятёрка обновлена</span></div>
+      <div class="update-note"><span class="notice-icon">i</span><p><b>Уфа теперь в рабочей пятёрке.</b> Замена Тюмени внесена в таблицу 7 октября. Окончательный выбор городов ещё требует проверки.</p></div>
+      <div class="panel city-panel">
+        <div class="panel-toolbar"><div class="segmented" aria-label="Набор городов"><button data-scope="core" aria-pressed="true">Рабочая пятёрка</button><button data-scope="all" aria-pressed="false">Все 7 городов</button></div><button class="text-button" id="reset-cities">Выбрать все</button></div>
+        <div id="city-picks" class="city-picks" aria-label="Выберите города для сравнения"></div>
+        <div class="comparison-controls"><div><label for="cost-mode">Расчёт бюджета</label><select id="cost-mode"><option value="comparable">Сопоставимая команда — общие оклады</option><option value="local">Местные допущения — рабочая пятёрка</option></select></div><div><label for="city-sort">Сортировка</label><select id="city-sort"><option value="order">Порядок исследования</option><option value="cost">По расходам: меньше → больше</option><option value="result">По модельному результату</option></select></div></div>
+        <p class="mobile-scroll-hint">Листайте таблицу вправо, чтобы сравнить все показатели →</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Сравнение городов, таблицу можно прокручивать"><table class="city-table"><caption class="sr-only">Сравнение выбранных городов</caption><thead><tr><th scope="col">Город</th><th scope="col">Расходы / месяц</th><th scope="col">Порог сделок</th><th scope="col">Результат / месяц</th><th scope="col">Аренда / месяц</th><th scope="col">hh, объявления</th></tr></thead><tbody id="city-rows"></tbody></table></div>
+        <div id="empty-cities" class="empty-state" hidden>Выберите хотя бы один город сверху, чтобы увидеть сравнение.</div>
+        <div class="table-footer"><span id="comparison-description"></span><span id="selection-count" aria-live="polite"></span></div>
+      </div>
+      <div class="two-columns"><div class="panel chart-panel"><div class="panel-title"><div><h3>Расходы рядом</h3><p>Регулярный бюджет зрелого офиса, ₽ / месяц</p></div><span class="mini-label">30 агентов</span></div><div class="cost-bars" id="city-bars"></div></div><div class="panel context-panel"><span class="eyebrow">ПЕРЕД РЕШЕНИЕМ</span><h3>Дешевле ≠ прибыльнее</h3><p>Модель сравнивает расходы. Объём сделок, местные комиссии и стоимость клиента ещё не подтверждены.</p><div class="context-metrics"><div><b>21</b><span>сделка в месяц — модельный план</span></div><div><b>62 780 ₽</b><span>остаток со смешанной сделки до расходов офиса</span></div></div><p class="subtle">Ставка аренды взята из одного объявления на город. Для выбора нужны сопоставимые помещения и собственный пилот.</p><button class="text-button" data-go="launch">Сравнить способы запуска <span aria-hidden="true">→</span></button></div></div>
+      <p class="source-note">Источник: «Сравнение 7 городов» / «Экономика городов». Цены жилья — предложения за сентябрь 2026. Счётчики hh разных дат включают смежные роли; это не число агентств или рабочих мест.</p>
+    </section>
+
+    <section id="launch" class="view" aria-labelledby="launch-title" hidden>
+      <div class="section-top"><div><h2 id="launch-title">Как открывать сеть</h2><p>Три календаря на одинаковых допущениях. Общий старт — февраль 2027.</p></div><span class="status-pill neutral">Вариант ещё не выбран</span></div>
+      <div class="launch-options" id="launch-options" aria-label="Выберите календарь для просмотра"></div>
+      <div class="panel"><div class="panel-title"><div><h3>Что меняется вместе с календарём</h3><p>Базовый экономический сценарий · весь горизонт 2027–2029</p></div><span class="mini-label">Сравнение рядом</span></div><div class="table-scroll" tabindex="0" role="region" aria-label="Финансовое сравнение вариантов запуска"><table id="launch-comparison"></table></div></div>
+      <div class="panel timeline-panel"><div class="panel-title"><div><h3 id="timeline-title">Календарь: волнами</h3><p>Офисы условные — города за ними ещё не закреплены</p></div><span class="mini-label">2027</span></div><div class="table-scroll" tabindex="0" role="region" aria-label="Календарь открытия офисов"><div id="timeline"></div></div></div>
+      <div class="panel"><div class="panel-title"><div><h3>Если найм и сделки замедлятся</h3><p>Стресс-проверка относится к календарю «Волнами», независимо от выбранного выше варианта.</p></div></div><div class="table-scroll" tabindex="0" role="region" aria-label="Стресс-сценарии"><table id="stress-table"></table></div></div>
+      <p class="source-note">Источник: «Очередность открытия», «Стресс-сценарий». Подготовка до открытия, дополнительные тренеры и наставнические премии в эти суммы не включены.</p>
+    </section>
+
+    <section id="finance" class="view" aria-labelledby="finance-title" hidden>
+      <div class="section-top"><div><h2 id="finance-title">Деньги на весь проект</h2><p>Основная модель: январь, март, май, июль и сентябрь 2027. Пять условных офисов.</p></div><span class="status-pill neutral" id="finance-scenario"></span></div>
+      <div class="metric-grid" id="finance-metrics"></div>
+      <div class="panel"><div class="panel-title chart-title"><div><h3>Денежный поток</h3><p>Накопленный поток и результат отдельного месяца, млн ₽</p></div><div class="segmented" aria-label="Год финансовой модели"><button data-year="2027" aria-pressed="true">2027</button><button data-year="2028" aria-pressed="false">2028</button><button data-year="2029" aria-pressed="false">2029</button><button data-year="all" aria-pressed="false">Все годы</button></div></div><div class="chart-legend"><span><i class="cumulative"></i>Накопленный поток</span><span><i class="monthly"></i>Поток месяца</span></div><div id="finance-chart" class="finance-chart"></div><details class="detail-disclosure"><summary>Помесячные цифры <span>+</span></summary><div class="table-scroll" tabindex="0" role="region" aria-label="Помесячная финансовая модель"><table id="finance-table"></table></div></details></div>
+      <div class="two-columns"><div class="panel"><div class="panel-title"><div><h3>Экономика одной сделки</h3><p>Модельные комиссии и выплаты, ₽</p></div></div><div class="table-scroll" tabindex="0" role="region" aria-label="Экономика сделки"><table id="trade-table"></table></div></div><div class="panel context-panel"><span class="eyebrow">КАК ЧИТАТЬ БЮДЖЕТ</span><h3>Три разных расчёта</h3><p><b>Города</b> — регулярные расходы зрелого офиса. Разовые вложения и обучение до сделок не входят.</p><p><b>Запуск</b> — сравнение трёх календарей с февраля 2027.</p><p><b>Финансы</b> — основная помесячная модель с января 2027. Она пока использует универсальные расходы и не объединена с местными сметами.</p><p class="subtle">Суммы разных расчётов нельзя складывать или считать согласованным городским бизнес-планом.</p></div></div>
+      <p class="source-note">Источник: «Финансы», «Экономика сделки». Значения — гипотезы активного сценария. Денежная окупаемость к концу 2029 года не достигнута.</p>
+    </section>
+
+    <section id="team" class="view" aria-labelledby="team-title" hidden>
+      <div class="section-top"><div><h2 id="team-title">Люди до открытия дверей</h2><p>Первый набор для пяти офисов: опытное ядро и отдельная программа для новичков.</p></div><span class="status-pill neutral">План, не фактические выходы</span></div>
+      <div class="metric-grid" id="team-metrics"></div>
+      <div class="panel"><div class="panel-title"><div><h3>Бюджеты найма по городам</h3><p>Первичный расчёт для 12 выходов. Местные дополнения пока вне общего денежного потока.</p></div></div><div class="table-scroll" tabindex="0" role="region" aria-label="Бюджеты найма"><table id="hiring-table"></table></div></div>
+      <div class="two-columns"><div class="panel"><div class="panel-title"><div><h3>Мощность общей команды</h3><p>Окна найма и обучения — по два месяца</p></div></div><div id="capacity" class="capacity-list"></div></div><div class="panel"><div class="panel-title"><div><h3>Объём первого набора</h3><p>Плановая воронка на все пять офисов</p></div></div><div id="hiring-funnel" class="funnel"></div><p class="panel-footnote">Интервью рассчитаны по смешанному показателю АУП и агентов. Местная агентская конверсия пока не измерена.</p></div></div>
+      <div class="panel"><div class="panel-title"><div><h3>Запас до первых поступлений новичка</h3><p>Расчётная доля расходов офиса и прямой подбор. Это не сумма выплат сотруднику.</p></div></div><div class="table-scroll" tabindex="0" role="region" aria-label="Затраты до первых комиссий новичков"><table id="newbie-table"></table></div><p class="panel-footnote">Модель: первые закрытия и поступления вторички с 4-го месяца, первички с 6-го. Это сценарий группы, а не обещание срока первой сделки человеку.</p></div>
+    </section>
+
+    <section id="data" class="view" aria-labelledby="data-title" hidden>
+      <div class="section-top"><div><h2 id="data-title">Цифры из исходной таблицы</h2><p>Проверяйте детали расчётов и основания сравнения.</p></div><a class="source-link dark" data-source target="_blank" rel="noopener">Открыть Google Sheets <span aria-hidden="true">→</span></a></div>
+      <div class="update-note"><span class="notice-icon">i</span><p>Сайт показывает данные, прочитанные <b>7 октября 2026</b>. Даты отдельных исследований отличаются. Изменения в Google Sheets пока не появляются здесь автоматически.</p></div>
+      <div class="panel"><div class="panel-toolbar source-selector"><label for="source-select">Раздел источника</label><select id="source-select"></select></div><div id="raw-data" class="table-scroll raw-data" tabindex="0" role="region" aria-label="Значения из исходной таблицы"></div><div class="table-footer"><span id="source-range"></span><span>Просмотр сохранённых значений</span></div></div>
+    </section>
   </main>
-  <div class="unlocked-shell" id="unlocked-shell" hidden><header class="access-bar"><span><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4.5" y="8.5" width="11" height="8" rx="2"/><path d="M7 8.5V6a3 3 0 0 1 6 0v2.5"/></svg> Рабочий проект Сити-Центр</span><button id="lock-button" type="button">Закрыть доступ <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4H4v12h4M11 6l4 4-4 4M7 10h8"/></svg></button></header><iframe id="project-frame" title="Проект открытия пяти офисов" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox allow-modals allow-downloads" referrerpolicy="no-referrer"></iframe></div>
-  <noscript><p class="no-script">Для расшифровки проекта включите JavaScript в браузере.</p></noscript>
+  <footer><span><b>Сити-Центр</b> · Пять новых офисов</span><span>Срез сайта: 07.10.2026 · Данные из рабочей модели</span><button id="print-button" class="text-button">Сохранить PDF</button></footer>
+</div>
+<dialog id="city-dialog"><div class="dialog-top"><span class="eyebrow">ГОРОД КРУПНЫМ ПЛАНОМ</span><button class="close-button" id="close-dialog" aria-label="Закрыть карточку города"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div><div id="city-detail"></div></dialog>
+<noscript><p class="noscript-note">Для сравнения городов и просмотра расчётов включите JavaScript или откройте <a href="https://docs.google.com/spreadsheets/d/17VLUhYE2MeV78FpBGQdUhig3JvAh2j_HaQ3GlzqCpIE/edit">исходную таблицу</a>.</p></noscript>
 </body>
 </html>
