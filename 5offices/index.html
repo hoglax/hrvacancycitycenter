@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#2154f5">
+  <title>Рабочий проект — Сити-Центр</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232154f5'/%3E%3Cpath d='M23 9a10 10 0 1 0 0 14' fill='none' stroke='%23d4f64a' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="login.css">
+  <script src="unlock.js" defer></script>
+</head>
+<body>
+  <main class="login-screen" id="login-screen">
+    <div class="login-shell">
+      <a class="brand" href="./" aria-label="Сити-Центр"><span class="brand-mark">СЦ</span><span>Сити-Центр<small>Рабочее пространство</small></span></a>
+      <section class="login-card" aria-labelledby="login-heading">
+        <span class="eyebrow"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4.5" y="8.5" width="11" height="8" rx="2"/><path d="M7 8.5V6a3 3 0 0 1 6 0v2.5"/></svg> ДОСТУП ДЛЯ КОМАНДЫ</span>
+        <h1 id="login-heading">Большие планы.<br><span>В своём кругу.</span></h1>
+        <p class="intro">Рабочий проект открытия пяти офисов. Введите пароль, чтобы посмотреть план, команду и экономику запуска.</p>
+        <form id="unlock-form">
+          <label for="password">Пароль проекта</label>
+          <div class="password-field"><input id="password" name="password" type="password" autocomplete="current-password" required aria-describedby="login-message" autocapitalize="none" spellcheck="false"><button class="show-password" id="show-password" type="button" aria-label="Показать пароль" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+          <button class="submit-button" id="submit-button" type="submit">Открыть проект <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3 13 10-10M4 3h9v9"/></svg></button>
+          <p class="login-message" id="login-message" role="status" aria-live="polite"></p>
+        </form>
+        <p class="privacy-note"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 2 6 2.5v5c0 4.5-6 8-6 8s-6-3.5-6-8v-5L10 2Z"/><path d="m7.5 9.5 1.8 1.8 3.2-3.2"/></svg>Содержимое зашифровано и открывается по паролю.</p>
+      </section>
+      <footer>Сити-Центр · Развитие сети</footer>
+    </div>
+    <div class="login-art" aria-hidden="true"><div class="art-kicker">ОТ ИДЕИ К НОВОЙ ГЕОГРАФИИ</div><div class="art-lines"><i></i><i></i><i></i><i></i><i></i><div class="art-center">СЦ</div><span class="art-node art-node-1"></span><span class="art-node art-node-2"></span><span class="art-node art-node-3"></span><span class="art-node art-node-4"></span><span class="art-node art-node-5"></span></div><h2>Пять новых офисов.<br>Одна система роста.</h2><p>Города. Люди. Экономика. Решения.</p><span class="art-foot">РАБОЧИЙ ПРОЕКТ КОМПАНИИ</span></div>
+  </main>
+  <div class="unlocked-shell" id="unlocked-shell" hidden><header class="access-bar"><span><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4.5" y="8.5" width="11" height="8" rx="2"/><path d="M7 8.5V6a3 3 0 0 1 6 0v2.5"/></svg> Рабочий проект Сити-Центр</span><button id="lock-button" type="button">Закрыть доступ <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4H4v12h4M11 6l4 4-4 4M7 10h8"/></svg></button></header><iframe id="project-frame" title="Проект открытия пяти офисов" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox allow-modals allow-downloads" referrerpolicy="no-referrer"></iframe></div>
+  <noscript><p class="no-script">Для расшифровки проекта включите JavaScript в браузере.</p></noscript>
+</body>
+</html>
